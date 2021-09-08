@@ -3,6 +3,7 @@ require_relative 'Competitor'
 RSpec.describe Competitor do
     context 'initialize competitor class' do
         before(:each) do
+            @competitor = Competitor.new 'P001', 'Juan Diaz', 22, '12345678', 'black', 5, 0, 0
         end
         it '#new' do
             expect(@competitor).to be_an_instance_of(Competitor)    
@@ -14,7 +15,7 @@ RSpec.describe Competitor do
             expect(@competitor.name).to eq('Juan Diaz')
         end
         it 'new#age' do
-            expect(@competitor.age).to eq('22')
+            expect(@competitor.age).to eq(22)
         end
         it 'new#dni' do
             expect(@competitor.dni).to eq('12345678')
