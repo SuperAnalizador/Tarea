@@ -9,5 +9,6 @@ class Competitor
     @wongame = wongame
     @tiedgame = tiedgame
     @lostgame = lostgame
+    @score = (wongame * 4) + (tiedgame * 3)
     end
 end

@@ -7,3 +7,4 @@ class Team
         @competitors = Array.new
     end
 end
+ 
