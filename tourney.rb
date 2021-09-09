@@ -16,5 +16,13 @@ end
             puts "Participante no encontrado"
         end
     end
+
+    def getcode(code)
+        for team in @teams
+            if team.code == code
+                return team
+            end
+        end
+    end
 end
 
