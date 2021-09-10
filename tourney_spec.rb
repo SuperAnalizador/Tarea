@@ -19,5 +19,9 @@ RSpec.describe Tourney do
             @team = Team.new 'T001', 'Dojo 1'
             expect(@team.code).to eq('T001')
         end
+        it '#loginteam' do
+            @team = Team.new 'T002', 'Dojo 2'
+            expect(@team.code).to eq('T002')
+        end
     end
 end

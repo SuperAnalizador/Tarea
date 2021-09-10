@@ -24,5 +24,12 @@ end
             end
         end
     end
+    
+    def loginteam(code,name)
+        team = getcode(code)
+        team = Team.new(code, name)
+        @teams.push(team)
+    end
+    
 end
 
