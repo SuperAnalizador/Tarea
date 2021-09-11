@@ -23,23 +23,9 @@ RSpec.describe Competitor do
         it 'new#beltcolor' do
             expect(@competitor.beltcolor).to eq('black')
         end
-        it 'new#code' do
-            expect(@competitor.wongame).to eq(5)
-        end
-        it 'new#code' do
-            expect(@competitor.tiedgame).to eq(0)
-        end
-        it 'new#code' do
-            expect(@competitor.lostgame).to eq(0)
-        end
         it 'new#score' do
             expect(@competitor.score).to eql(20)
         end
-    end
-    context 'calcsore' do
-        it 'new#calcscore' do
-            @competitor = Competitor.new 'P001', 'Juan Diaz', 22, '12345678', 'black', 5, 0, 0
-            expect(@competitor.calcscore).to eql(20)
-        end
+     
     end
 end

@@ -7,10 +7,10 @@ RSpec.describe Team do
         it '#new' do
             expect(@team).to be_an_instance_of(Team)
         end
-        it 'new#code' do
+       it 'new#code' do
             expect(@team.code).to eq('T001')
         end
-        it 'new#name' do
+       it 'new#name' do
             expect(@team.name).to eq('Dojo 1')
         end
     end

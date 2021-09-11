@@ -27,9 +27,7 @@ RSpec.describe Tourney do
             @competitor = Competitor.new 'P001', 'Juan Diaz', 22, '12345678', 'black', 5, 0, 0
             expect(@competitor.beltcolor).to eq('black')
         end
-        it '#win' do
-            @competitor = Competitor.new 'P001', 'Juan Diaz', 22, '12345678', 'black', 5, 0, 0
-            expect(@competitor.wongame).to eql(5)
-        end
+
     end
 end
+
